@@ -1,0 +1,462 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*inizio css style*/
+
+@font-face {
+    font-family: 'Retro Grunge West';
+    src: url('Font_Retro_Grunge_West/Retro Grunge West.otf') format('woff2');
+}
+
+.banner {
+    background-image: url("img/bannerhome.png");
+    background-size: cover;
+    height:900px;
+    width: 100%;
+}
+
+#navbar {
+    height: 180px;
+    background-color: #1B1917;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.75;
+    padding-left:60px;
+    padding-right: 60px;
+}
+
+nav ul {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left:88px;
+    font-family: Retro Grunge West;
+    letter-spacing: 4px;
+    color: #D9CDBF;
+    font-size: 40px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D9CDBF ;
+}
+
+nav ul li a:hover {
+    color: #713535;
+
+}
+
+nav ul li a.active {
+    background: #D9CDBF;
+    color: #713535;
+    padding: 10px;
+    line-height: 140%;
+}
+
+.container_sezione {
+    height: 762px;
+    width: 100%;
+    background-color: #D9CDBF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_home_1 {
+    display:flex;
+    justify-content:space-between;
+    width:85.6%;
+
+}
+
+h2 {
+    font-family: "Retro Grunge West","Georgia","Roboto Light";
+    font-size:56px;
+    letter-spacing:4px;
+    color: #1B1917;
+    line-height: 100%;
+
+}
+
+h3 {
+    font-family: "Retro Grunge West","Georgia","Roboto Light";
+    font-size:48px;
+    letter-spacing:4px;
+    color: #1B1917;
+    line-height: 100%;
+    padding-top: 10px;
+}
+
+p {
+    font-family: "Tahoma","Verdana","Segoe UI Semilight";
+    font-size: 16px;
+}
+
+a {
+    color: #1B1917;
+
+}
+
+.a_button{
+    text-decoration: none;
+}
+
+.text_home {
+    max-width: 45%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 423px ;
+    margin-top:auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    line-height: 140%;
+}
+
+.button_primary {
+    width: 198px;
+    height: 58px;
+    border-radius: 20px;
+    background-color: #A6937C;
+    /*box-shadow: 3px 3px 5px dimgray;*/
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-left:auto;
+    margin-right: auto;
+    line-height: 58px;
+    position: relative;
+}
+
+.button_primary:hover {
+    background: #A6937C;
+    opacity:0.6;
+    color: #1B1917;
+    text-decoration: underline;
+    transition: ease-out;
+}
+
+
+
+.button_text {
+    color: #1B1917;
+    font-family: "Tahoma","Verdana","Segoe UI Semilight";
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.banner_unico {
+    width:100%;
+    background-color: #D9CDBF;
+    background-image: url("img/1440x480.png");
+    background-size: cover;
+    height:400px;
+}
+
+img {max-width: 100%;}
+
+
+.section_home_2 {
+    background-color:#F4F0EC;
+    height: 1962px;
+
+}
+.titoli_h1 {
+    padding-top: 56px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Retro Grunge West","Georgia","Roboto Light";
+    font-size: 64px;
+    letter-spacing:4px;
+    color: #1B1917;
+    text-transform: uppercase;
+}
+
+.subtitle  {
+    font-family: "Tahoma","Verdana","Segoe UI Semilight";
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.pretitle {
+    font-family: "Tahoma","Verdana","Segoe UI Semilight";
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.02px;
+    text-transform: uppercase;
+}
+
+
+.link_footer {
+    font-family: "Tahoma","Verdana","Segoe UI Semilight";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 140%;
+    text-decoration: underline;
+}
+
+.container_card_home {
+    width: 100%;
+}
+
+.container_card2_home {
+    margin-top: 67px;
+    width: 100%;
+    height: 245px;
+}
+
+.card1 {
+    height: 245px;
+    width:736px;
+    border-radius:20px;
+    background-color:#D9CDBF;
+    display: flex;
+    align-content: center;
+    margin-top: 180px;
+    margin-left: 82px;
+    justify-content: center;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+
+}
+
+
+
+.cardimg {margin-left: 20px;
+    margin-top:28px;
+    margin-right:38px;
+    float:left;
+
+}
+
+.cardtext {
+    display:inline-block;
+    width: 412px;
+    margin-right:110px;
+    text-align: left;
+    align-content: center;
+    margin-top:auto;
+    margin-bottom: auto;
+    text-shadow: 0px 3px 2px #AEA59A ;
+    line-height: 140%;
+}
+
+.card2 {
+    height: 245px;
+    width:736px;
+    border-radius:20px;
+    background-color:#D9CDBF;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-right: 82px;
+    float:right;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.cardimg2 {
+    float:right;
+    margin-left:20px;
+    margin-top:28px;
+    position:relative;
+}
+
+.cardtext2 {
+    width: 412px;
+    margin-left:110px;
+    margin-top:95px;
+    float:left;
+    text-align: left;
+    align-content: center;
+    text-shadow: 0px 3px 2px #AEA59A ;
+    line-height: 140%;
+
+}
+
+.card3 {
+    height: 245px;
+    width:736px;
+    border-radius:20px;
+    background-color:#D9CDBF;
+    display: flex;
+    align-content: center;
+    margin-left: 82px;
+    float:left;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+
+}
+
+.componente2_quotes {
+    margin-right: 44px;
+    float: right;
+    margin-top: 50px;
+}
+
+.componente_quotes {
+    margin-top: 80px;
+    float: left;
+    margin-left: 44px;
+}
+
+footer {
+    height: 350px;
+    width: 100%;
+    background-color: #A6937C;
+    display: flex;
+    align-content: center;
+
+}
+
+.div1_footer {
+    width: 28%;
+    height:330px;
+    border-right: 2px solid #1B1917;
+    margin-top: auto;
+    margin-bottom:auto;
+    text-align: center;
+
+}
+
+.div2_footer {
+    display:inline-block;
+    width: 60%;
+    height:330px;
+    border-right: 2px solid #1B1917;
+    margin-top: auto;
+    margin-bottom:auto ;
+
+
+
+}
+
+.textsocial {
+    margin-top:43px;
+    font-size: 40px;
+    font-family: "Retro Grunge West","Georgia","Roboto Light";
+    letter-spacing:4px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    width: 221px;
+    height: 40px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.logo_footer {
+    margin-top:37px;
+}
+
+
+.div_article_ls {
+    margin-left:10%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_article_ls2 {
+    margin-left: 10%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.single_article {
+    margin-top: 95px;
+    width: 22%;
+    display: inline-block;
+    height: 130px;
+}
+
+.single_article2 {
+    width: 22%;
+    height: 44px;
+
+}
+
+
+
+.div3_footer {
+    display: inline-block;
+    width: 12%;
+    height: 330px;
+    margin-top: auto;
+    margin-bottom:auto ;
+    display: flex;
+    align-items: center;
+
+}
+
+.menuA_footer {
+    font-family: "Tahoma","Verdana","Segoe UI Semilight";
+    font-size: 14px;
+    padding:8px;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p> I nati nell'anno <span id="d1">possono bere? </span>  <span id="demo1"> </span> </p>
+<p> I nati nell'anno <span id="d2">possono bere? </span>  <span id="demo2"> </span> </p>
+<p> I nati nell'anno <span id="d3">possono bere? </span>  <span id="demo3"> </span> </p>
+<p> I nati nell'anno <span id="d4">possono bere? </span>  <span id="demo4"> </span> </p>
+
+<script>
+    let birthYear = [2003, 1983, 2007, 2000];
+    let thisYear = 2018;
+    let drinkAlcohol = [false, false , false , false];
+
+    for(i=0; i<birthYear.length; i++) {
+        if(thisYear-birthYear[i]>=18) {
+            drinkAlcohol[i]=true
+        }
+        document.getElementById("demo").innerHTML = drinkAlcohol[0];
+    }
+
+
+    document.getElementById("demo").innerHTML = drinkAlcohol[1];
+    document.getElementById("demo").innerHTML = drinkAlcohol[2];
+    document.getElementById("demo").innerHTML = drinkAlcohol[3];
+    document.getElementById("d1").innerHTML = birthYear[0];
+    document.getElementById("d2").innerHTML = birthYear[1];
+    document.getElementById("d3").innerHTML = birthYear[2];
+    document.getElementById("d4").innerHTML = birthYear[3];
+
+
+
+</script>
+
+</body>
+</html>
+

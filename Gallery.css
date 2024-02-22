@@ -1,0 +1,248 @@
+@import "Home.css";
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*inizio css style*/
+
+
+
+.banner_gallery {
+    background-image: url("img/banner_gallery.png");
+    background-size:cover;
+    height: 900px;
+    width: 100%;
+}
+
+/* thumbnail */
+
+.slider-wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.slider {
+    display: flex;
+    width: 628px;
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+.container_gallery5 {
+    height: 728px;
+    width: 100%;
+}
+
+.container_gallery6 {
+    margin-top: 64px;
+    width: 100%;
+    height:513px;
+    background-color: #D9CDBF;
+    display: flex;
+    justify-content: center;
+}
+
+.slider_img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+
+
+
+.slider-nav a {
+    border-radius: 20px;
+    transition: opacity ease 250ms;
+
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+
+}
+
+.slider_group {
+    height: 223px;
+    width:100%;
+    background-color: #A6937C;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.slider-nav {
+    width: 88%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    align-content:center;
+    align-items: center;
+    padding: 0;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-nav img {
+    max-width:100%;
+    height:auto;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+
+}
+.slider-nav img:hover{
+-moz-border-radius: 30em;
+-webkit-border-radius: 30em;
+border-radius: 30em;}
+
+.container_gallery {
+    width: 100%;
+    height: 1030px;
+    background-color: #D9CDBF;
+}
+
+.container_gallery2 {
+    height: 886px;
+    background-color: #D9CDBF;
+    width: 100%;
+
+}
+
+.container_gallery1 {
+    width: 100%;
+    height: 749px;
+}
+
+.group_photo1 {
+    width: 51%;
+    height: 749px;
+    display: inline-block;
+    margin-left: 5.7%;
+    position:relative;
+}
+
+
+
+
+.img_gallery1 {
+        position:absolute;
+        width:56%;
+        height:auto;
+        filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    }
+
+
+    .img_gallery2 {
+        position:absolute;
+        left: 44%;
+        top: 25%;
+        width: 56%;
+        height: auto;
+        filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+
+    }
+
+    .img_gallery3 {
+        position:absolute;
+        left: 15%;
+        top:59%;
+        width: 56%;
+        height: auto;
+        filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+
+    }
+
+@media screen and (max-width: 1030px) {
+    .img_gallery3 {
+        top: 350px;
+        filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    }
+}
+
+
+
+.container_text_gallery1 {
+    float:right;
+    margin-right: 5.7%;
+    width: 30%;
+    height: 749px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_gallery1 {
+    height: 309px;
+    width: 100%;
+}
+
+.h3_p {
+    margin-top: 39px;
+    line-height: 140%;
+}
+
+
+
+
+
+
+
+
+
+
+
